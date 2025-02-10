@@ -3,110 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Statements Basics</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Accountancy Genius Academy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+    <nav class="navbar">
+        <div class="logo">Accountancy Genius Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://videolectures101.github.io/accountancyvideolecture/" target="_blank">Video Lectures</a>
+            <a href="https://accountancyquiz101.github.io/accountancyquiz/" target="_blank">Test Your Knowledge</a>
+            <a href="#" class="resources-link">
+                <span>Downloadable Resources</span>
+                <i class="lock-icon">🔒</i>
+                <div class="upgrade-tooltip">Upgrade to Pro to unlock</div>
+            </a>
+            <a href="https://accountancyquiz101.github.io/PracticeQuestions/" target="_blank">Practice Questions</a>
+        </div>
+    </nav>
 
-    <!-- Video Lecture Section -->
-    <section id="lecture">
-        <h1>Video Lecture: Financial Statements Basics</h1>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/Fi1wkUczuyk?si=rn-2ur2OmYp0IdVm" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </section>
+    <div class="upgrade-banner">
+        <a href="https://pricingpage101.github.io/pricings/" class="upgrade-link">
+            <span class="pro-button">🌟 Upgrade to Pro! 🌟</span>
+        </a>
+        <a href="https://pricingpage101.github.io/donation/" class="donate-link">
+            <span class="donate-button">💝 Donate Here! 💝</span>
+        </a>
+    </div>
 
-    <!-- Quiz Section -->
-    <section id="quiz">
-        <h2>Quiz: Financial Statements Basics</h2>
-        <form id="quizForm">
-            <div class="quiz-question">
-                <p>1. What are the three main financial statements?</p>
-                <input type="radio" name="q1" value="A"> A. Income Statement, Balance Sheet, Cash Flow Statement<br>
-                <input type="radio" name="q1" value="B"> B. Trial Balance, Income Statement, Balance Sheet<br>
-                <input type="radio" name="q1" value="C"> C. Journal, Ledger, Cash Flow Statement<br>
-                <input type="radio" name="q1" value="D"> D. General Ledger, Income Statement, Balance Sheet<br>
-                <span class="feedback" id="feedback1"></span>
+    <div class="container">
+        <h1>Welcome to Accountancy Genius Academy</h1>
+        <p>Your comprehensive online accountancy learning platform. Master financial accounting, management accounting, and auditing with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Customizable study paths to master accountancy concepts at all levels.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>2. Which financial statement shows a company’s financial position at a specific point in time?</p>
-                <input type="radio" name="q2" value="A"> A. Income Statement<br>
-                <input type="radio" name="q2" value="B"> B. Cash Flow Statement<br>
-                <input type="radio" name="q2" value="C"> C. Balance Sheet<br>
-                <input type="radio" name="q2" value="D"> D. Statement of Retained Earnings<br>
-                <span class="feedback" id="feedback2"></span>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced accountants and educators.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>3. What does the income statement primarily show?</p>
-                <input type="radio" name="q3" value="A"> A. The company's financial position<br>
-                <input type="radio" name="q3" value="B"> B. The company's revenues and expenses over a period<br>
-                <input type="radio" name="q3" value="C"> C. Cash inflows and outflows<br>
-                <input type="radio" name="q3" value="D"> D. Changes in equity<br>
-                <span class="feedback" id="feedback3"></span>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, practical problems, and downloadable resources.</p>
             </div>
+        </div>
 
-            <div class="quiz-question">
-                <p>4. Which financial statement is used to determine the profitability of a business?</p>
-                <input type="radio" name="q4" value="A"> A. Balance Sheet<br>
-                <input type="radio" name="q4" value="B"> B. Income Statement<br>
-                <input type="radio" name="q4" value="C"> C. Cash Flow Statement<br>
-                <input type="radio" name="q4" value="D"> D. Statement of Owner's Equity<br>
-                <span class="feedback" id="feedback4"></span>
+        <section id="donate" class="donate-section">
+            <h2 class="donation-title">Support Free Accountancy Education</h2>
+            <div class="donation-image-container">
+                <img src="https://example.com/accountancy-education.jpg"
+                     alt="Accountancy students in a classroom" 
+                     class="donation-image"
+                     loading="lazy">
             </div>
+            <p class="donation-description">
+                Help us provide free accountancy resources and tools to students worldwide. Donate today to empower future financial professionals!
+            </p>
+        </section>
+    </div>
 
-            <div class="quiz-question">
-                <p>5. What does the balance sheet show?</p>
-                <input type="radio" name="q5" value="A"> A. Assets, liabilities, and owner's equity<br>
-                <input type="radio" name="q5" value="B"> B. Cash inflows and outflows<br>
-                <input type="radio" name="q5" value="C"> C. Profit and loss<br>
-                <input type="radio" name="q5" value="D"> D. Revenues and expenses<br>
-                <span class="feedback" id="feedback5"></span>
+    <div class="telegram-popup" id="telegramPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-header">
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
+                     alt="Telegram Logo" 
+                     class="telegram-logo">
+                <h2>🚨 Limited Time Access! 🚨</h2>
             </div>
+            <div class="popup-body">
+                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
+                <p>Join our exclusive Telegram channel to access:</p>
+                <ul>
+                    <li>📚 Free Video Lectures</li>
+                    <li>📝 Study Materials</li>
+                    <li>👥 Community Support</li>
+                    <li>🎯 Practice Questions</li>
+                </ul>
+                <a href="https://t.me/accountancyhub101" class="join-btn" target="_blank">
+                    Join Now Before It's Too Late!
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Accountancy Genius Academy. All Rights Reserved.</p>
+    </footer>
 
-            <button type="submit">Submit Quiz</button>
-        </form>
-    </section>
-
-    <!-- Assignment Section -->
-    <section id="assignment">
-        <h2>Assignment</h2>
-        <p><strong>Assignment Question:</strong></p>
-        <p>Given the following information for a small business, prepare the basic financial statements:</p>
-        <ul>
-            <li><strong>Balance Sheet Information:</strong></li>
-            <ul>
-                <li>Assets: Cash $5,000, Accounts Receivable $2,000, Inventory $3,000</li>
-                <li>Liabilities: Accounts Payable $1,500, Loans Payable $2,500</li>
-                <li>Owner’s Equity: $6,000</li>
-            </ul>
-            <li><strong>Income Statement Information:</strong></li>
-            <ul>
-                <li>Revenues: Service Revenue $4,000</li>
-                <li>Expenses: Rent $800, Salaries $1,200, Utilities $300</li>
-            </ul>
-        </ul>
-        <p><strong>Tasks:</strong></p>
-        <ol>
-            <li>Prepare a balance sheet as of the end of the period.</li>
-            <li>Prepare an income statement for the period.</li>
-            <li>Explain how each statement reflects the financial position and performance of the business.</li>
-        </ol>
-        <p>Please submit your assignment by sending an email to: <a href="mailto: accomadesimple101@gmail.com"> accomadesimple101@gmail.com </a></p>
-        <p>If the link does not work, send your assignment manually to: accomadesimple101@gmail.com </p>
-        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
-        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donation">
-        <h2>PLEASE DONATE</h2>
-        <p>Account Number: 2032202001590</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
-        <p>Wave Mobile: 3709558</p>
-        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
-    </section>
-
-    <script src="script.js"></script> <!-- Link to external JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
